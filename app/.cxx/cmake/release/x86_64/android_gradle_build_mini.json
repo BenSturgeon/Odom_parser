@@ -1,0 +1,22 @@
+{
+  "buildFiles": [
+    "/home/benjamin/Android/Sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake",
+    "/home/benjamin/Android/Sdk/ndk/21.3.6528147/build/cmake/platforms.cmake",
+    "/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/home/benjamin/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/.cxx/cmake/release/x86_64\" clean"
+  ],
+  "buildTargetsCommand": "/home/benjamin/Android/Sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/.cxx/cmake/release/x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "native-lib-Release-x86_64": {
+      "artifactName": "native-lib",
+      "buildCommand": "/home/benjamin/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/.cxx/cmake/release/x86_64\" native-lib",
+      "abi": "x86_64",
+      "output": "/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/build/intermediates/cmake/release/obj/x86_64/libnative-lib.so",
+      "runtimeFiles": [
+        "/home/benjamin/Coding/Opencv/Downloads/opencv_android 4.4/OpenCV-android-sdk/sdk/native/libs/x86_64/libopencv_java4.so"
+      ]
+    }
+  }
+}

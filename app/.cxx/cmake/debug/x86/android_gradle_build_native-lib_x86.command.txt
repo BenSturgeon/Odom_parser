@@ -1,0 +1,7 @@
+Executable : /home/benjamin/Android/Sdk/cmake/3.10.2.4988404/bin/ninja
+arguments : 
+-C
+/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/.cxx/cmake/debug/x86
+native-lib
+jvmArgs : 
+
