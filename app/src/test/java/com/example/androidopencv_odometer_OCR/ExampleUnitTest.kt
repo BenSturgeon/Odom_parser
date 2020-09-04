@@ -1,4 +1,4 @@
-package com.example.nativeopencvandroidtemplate
+package com.example.androidopencv_odometer_OCR
 
 import org.junit.Test
 

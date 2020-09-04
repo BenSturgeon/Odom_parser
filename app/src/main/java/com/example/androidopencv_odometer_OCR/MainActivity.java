@@ -1,4 +1,4 @@
-package com.example.nativeopencvandroidtemplate;
+package com.example.androidopencv_odometer_OCR;
 
 import android.Manifest;
 import android.app.Activity;
@@ -35,7 +35,6 @@ import org.opencv.dnn.Dnn;
 import org.opencv.dnn.Net;
 import org.opencv.imgproc.Imgproc;
 import org.opencv.utils.Converters;
-import android.widget.EditText;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -337,6 +336,8 @@ public class MainActivity extends Activity implements CvCameraViewListener2 {
 
 
                     }
+
+
                     TextView editOut = this.findViewById(R.id.NumberOutput);
                     editOut.setText(out);
                     System.out.println( editOut.getText() );
@@ -407,4 +408,7 @@ public class MainActivity extends Activity implements CvCameraViewListener2 {
 
 
     }
+
+
+
 }
