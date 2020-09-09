@@ -1,4 +1,4 @@
-# Install script for directory: /home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/src/main/cpp
+# Install script for directory: /home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/src/main/cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/.cxx/cmake/debug/armeabi-v7a/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/.cxx/cmake/debug/armeabi-v7a/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

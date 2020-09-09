@@ -38,7 +38,10 @@ import org.opencv.utils.Converters;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.List;
+import java.util.Map;
 
 public class MainActivity extends Activity implements CvCameraViewListener2 {
     private static final String TAG = "MainActivity";
@@ -49,6 +52,7 @@ public class MainActivity extends Activity implements CvCameraViewListener2 {
     Net findOdom;
     Net findNumbers;
     int odd;
+    Map<String, Integer> poss_Strings = new HashMap<String, Integer>();
 
 
     private CameraBridgeViewBase mOpenCvCameraView;
@@ -336,10 +340,10 @@ public class MainActivity extends Activity implements CvCameraViewListener2 {
 
 
                     }
-
+                    String likely = Likely(out);
 
                     TextView editOut = this.findViewById(R.id.NumberOutput);
-                    editOut.setText(out);
+                    editOut.setText(likely);
                     System.out.println( editOut.getText() );
 
 
@@ -365,8 +369,6 @@ public class MainActivity extends Activity implements CvCameraViewListener2 {
             startYolo = true;
 
             if (firstTimeYolo == false){
-
-
                 firstTimeYolo = true;
                 String alt_model = Environment.getExternalStorageDirectory() + "/dnns/Odom_detect.onnx";
                 String tinyYoloCfg = Environment.getExternalStorageDirectory() + "/dnns/yolov3-tiny_obj(2).cfg" ;
@@ -409,6 +411,23 @@ public class MainActivity extends Activity implements CvCameraViewListener2 {
 
     }
 
+    public String Likely(String curr){
+
+        if (poss_Strings.containsKey(curr)==false ) {
+            poss_Strings.put(curr, 1);
+        }
+        else {
+            poss_Strings.compute(curr, (key, oldValue) -> oldValue +1);
+        }
+        return poss_Strings.entrySet().stream().max((entry1, entry2) -> entry1.getValue() > entry2.getValue() ? 1 : -1).get().getKey();
+    }
+
+    public void clear(){
+        poss_Strings.clear();
+        TextView editOut = this.findViewById(R.id.NumberOutput);
+        editOut.setText("Nothing detected");
+
+    }
 
 
 }

@@ -1,2 +1,2 @@
-ninja: Entering directory `/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/.cxx/cmake/debug/arm64-v8a'
+ninja: Entering directory `/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/.cxx/cmake/debug/arm64-v8a'
 ninja: no work to do.

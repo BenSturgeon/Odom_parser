@@ -1,33 +1,33 @@
 {
   "stringTable": {
-    "0": "/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/.cxx/cmake/debug/arm64-v8a",
+    "0": "/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/.cxx/cmake/debug/arm64-v8a",
     "1": "--target=aarch64-none-linux-android28 --gcc-toolchain=/home/benjamin/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/benjamin/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dnative_lib_EXPORTS -I/home/benjamin/Coding/Opencv/Downloads/opencv_android 4.4/OpenCV-android-sdk/sdk/native/jni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -frtti -fexceptions -O0 -fno-limit-debug-info -fPIC"
   },
   "buildFiles": [
     "/home/benjamin/Android/Sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake",
     "/home/benjamin/Android/Sdk/ndk/21.3.6528147/build/cmake/platforms.cmake",
-    "/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/src/main/cpp/CMakeLists.txt"
+    "/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/src/main/cpp/CMakeLists.txt"
   ],
   "cleanCommands": [
-    "/home/benjamin/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/.cxx/cmake/debug/arm64-v8a\" clean"
+    "/home/benjamin/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/.cxx/cmake/debug/arm64-v8a\" clean"
   ],
-  "buildTargetsCommand": "/home/benjamin/Android/Sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/.cxx/cmake/debug/arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommand": "/home/benjamin/Android/Sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/.cxx/cmake/debug/arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
     "native-lib-Debug-arm64-v8a": {
-      "buildCommand": "/home/benjamin/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/.cxx/cmake/debug/arm64-v8a\" native-lib",
+      "buildCommand": "/home/benjamin/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/.cxx/cmake/debug/arm64-v8a\" native-lib",
       "buildType": "debug",
       "toolchain": "575658818",
       "abi": "arm64-v8a",
       "artifactName": "native-lib",
       "files": [
         {
-          "src": "/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/src/main/cpp/native-lib.cpp",
+          "src": "/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/src/main/cpp/native-lib.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         }
       ],
       "headers": [],
-      "output": "/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so",
+      "output": "/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so",
       "runtimeFiles": [
         "/home/benjamin/Coding/Opencv/Downloads/opencv_android 4.4/OpenCV-android-sdk/sdk/native/libs/arm64-v8a/libopencv_java4.so"
       ]

@@ -1,8 +1,3 @@
 # ninja log v5
-0	1080	1597766837	CMakeFiles/native-lib.dir/native-lib.cpp.o	e8f4c9388558d89b
-1080	1347	1597766838	/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	c5b8f13411e0bdf5
-0	1010	1597767302	CMakeFiles/native-lib.dir/native-lib.cpp.o	e8f4c9388558d89b
-1010	1157	1597767302	/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	c5b8f13411e0bdf5
-0	3	0	clean	a9136138217ff235
-1	914	1598360099	CMakeFiles/native-lib.dir/native-lib.cpp.o	e8f4c9388558d89b
-914	1190	1598360100	/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	c5b8f13411e0bdf5
+0	1367	1599226926	CMakeFiles/native-lib.dir/native-lib.cpp.o	86c91b344bb4dca5
+1367	1671	1599226927	/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	7bf8d223207e983f

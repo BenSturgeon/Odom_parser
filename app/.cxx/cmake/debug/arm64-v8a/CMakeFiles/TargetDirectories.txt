@@ -1,3 +1,3 @@
-/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/rebuild_cache.dir
-/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/edit_cache.dir
-/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/native-lib.dir
+/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/edit_cache.dir
+/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/native-lib.dir

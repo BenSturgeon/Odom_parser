@@ -1,8 +1,8 @@
 Executable : /home/benjamin/Android/Sdk/cmake/3.10.2.4988404/bin/cmake
 arguments : 
--H/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/src/main/cpp
+-H/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/src/main/cpp
 -DCMAKE_CXX_FLAGS=-frtti -fexceptions
--DCMAKE_FIND_ROOT_PATH=/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/.cxx/cmake/debug/prefab/x86_64/prefab
+-DCMAKE_FIND_ROOT_PATH=/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/.cxx/cmake/debug/prefab/x86_64/prefab
 -DCMAKE_BUILD_TYPE=Debug
 -DCMAKE_TOOLCHAIN_FILE=/home/benjamin/Android/Sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake
 -DANDROID_ABI=x86_64
@@ -11,12 +11,12 @@ arguments :
 -DCMAKE_ANDROID_ARCH_ABI=x86_64
 -DCMAKE_ANDROID_NDK=/home/benjamin/Android/Sdk/ndk/21.3.6528147
 -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
--DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/build/intermediates/cmake/debug/obj/x86_64
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/build/intermediates/cmake/debug/obj/x86_64
 -DCMAKE_MAKE_PROGRAM=/home/benjamin/Android/Sdk/cmake/3.10.2.4988404/bin/ninja
 -DCMAKE_SYSTEM_NAME=Android
 -DCMAKE_SYSTEM_VERSION=28
 -DOpenCV_DIR=/home/benjamin/Coding/Opencv/Downloads/opencv_android 4.4/OpenCV-android-sdk/sdk/native
--B/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/.cxx/cmake/debug/x86_64
+-B/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/.cxx/cmake/debug/x86_64
 -GNinja
 jvmArgs : 
 

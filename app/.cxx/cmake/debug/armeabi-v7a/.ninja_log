@@ -1,6 +1,0 @@
-# ninja log v5
-0	925	1597767301	CMakeFiles/native-lib.dir/native-lib.cpp.o	30f9fbc7e1ae0814
-925	1049	1597767301	/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	e41efcf4f8523800
-0	8	0	clean	a9136138217ff235
-1	1123	1598360098	CMakeFiles/native-lib.dir/native-lib.cpp.o	30f9fbc7e1ae0814
-1123	1309	1598360098	/home/benjamin/AndroidStudioProjects/native-opencv-android-template/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	e41efcf4f8523800
