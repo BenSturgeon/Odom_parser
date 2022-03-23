@@ -1,0 +1,11 @@
+# ninja log v5
+0	845	1647793568	CMakeFiles/native-lib.dir/native-lib.cpp.o	1be328301310d970
+846	994	1647793568	/home/capeai/StudioProjects/Odom_parser/app/build/intermediates/cxx/Debug/11532n6g/obj/arm64-v8a/libnative-lib.so	33fbf7c35e04f44f
+1	733	1647793776	CMakeFiles/native-lib.dir/native-lib.cpp.o	1be328301310d970
+733	858	1647793776	/home/capeai/StudioProjects/Odom_parser/app/build/intermediates/cxx/Debug/11532n6g/obj/arm64-v8a/libnative-lib.so	33fbf7c35e04f44f
+1	781	1647793833	CMakeFiles/native-lib.dir/native-lib.cpp.o	1be328301310d970
+781	904	1647793833	/home/capeai/StudioProjects/Odom_parser/app/build/intermediates/cxx/Debug/11532n6g/obj/arm64-v8a/libnative-lib.so	33fbf7c35e04f44f
+1	749	1647793946	CMakeFiles/native-lib.dir/native-lib.cpp.o	1be328301310d970
+749	868	1647793946	/home/capeai/StudioProjects/Odom_parser/app/build/intermediates/cxx/Debug/11532n6g/obj/arm64-v8a/libnative-lib.so	33fbf7c35e04f44f
+1	782	1647793976	CMakeFiles/native-lib.dir/native-lib.cpp.o	1be328301310d970
+782	903	1647793976	/home/capeai/StudioProjects/Odom_parser/app/build/intermediates/cxx/Debug/11532n6g/obj/arm64-v8a/libnative-lib.so	33fbf7c35e04f44f

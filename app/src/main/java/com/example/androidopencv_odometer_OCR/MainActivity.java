@@ -2,11 +2,17 @@ package com.example.androidopencv_odometer_OCR;
 
 import android.Manifest;
 import android.app.Activity;
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+
 import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import android.os.Environment;
+
+import android.content.Context;
+
 import android.util.Log;
 import android.view.SurfaceView;
 import android.view.View;
@@ -35,17 +41,32 @@ import org.opencv.dnn.Dnn;
 import org.opencv.dnn.Net;
 import org.opencv.imgproc.Imgproc;
 import org.opencv.utils.Converters;
+import org.opencv.imgcodecs.Imgcodecs;
 
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
+import java.time.LocalTime;
 
 public class MainActivity extends Activity implements CvCameraViewListener2 {
     private static final String TAG = "MainActivity";
     private static final int CAMERA_PERMISSION_REQUEST = 1;
+    private static final int REQUEST_EXTERNAL_STORAGE = 1;
+    private static String[] PERMISSIONS_STORAGE = {
+            Manifest.permission.READ_EXTERNAL_STORAGE,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE
+    };
+
 
     boolean startYolo = false;
     boolean firstTimeYolo = false;
@@ -73,6 +94,20 @@ public class MainActivity extends Activity implements CvCameraViewListener2 {
         }
     };
 
+    public static void verifyStoragePermissions(Activity activity) {
+        // Check if we have write permission
+        int permission = ActivityCompat.checkSelfPermission(activity, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+
+        if (permission != PackageManager.PERMISSION_GRANTED) {
+            // We don't have permission so prompt the user
+            ActivityCompat.requestPermissions(
+                    activity,
+                    PERMISSIONS_STORAGE,
+                    REQUEST_EXTERNAL_STORAGE
+            );
+        }
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         Log.i(TAG, "called onCreate");
@@ -84,8 +119,8 @@ public class MainActivity extends Activity implements CvCameraViewListener2 {
                 this,
                 new String[]{Manifest.permission.CAMERA},
                 CAMERA_PERMISSION_REQUEST
-        );
 
+        );
 
 
         setContentView(R.layout.activity_main);
@@ -153,10 +188,9 @@ public class MainActivity extends Activity implements CvCameraViewListener2 {
         Mat frame = inputFrame.rgba();
 
 
-
-
-
         if (startYolo == true) {
+
+            clear(mOpenCvCameraView);
 
             Imgproc.cvtColor(frame, frame, Imgproc.COLOR_RGBA2RGB);
 
@@ -243,15 +277,18 @@ public class MainActivity extends Activity implements CvCameraViewListener2 {
                 Rect rec = new Rect((int) box.x, (int) box.y, (int) box.width, (int) box.height);
                 Mat frameOdom = new Mat(frame, rec);
 
-
+                Scalar Detect_Color =new Scalar(0, 255, 0, 255);
                 Imgproc.cvtColor(frameOdom, frameOdom, Imgproc.COLOR_RGBA2RGB);
+//                Imgproc.rectangle(frame, new Point(box.x, box.y), new Point(box.x + box.width, box.y + box.height), Detect_Color, 5);
 
 
                 Mat imageBlob2 = Dnn.blobFromImage(frameOdom, 0.00392, new Size(416, 416), new Scalar(0, 0, 0),/*swapRB*/false, /*crop*/false);
-
+//                LocalTime time = LocalTime.now();
+//
+//                Imgcodecs.imwrite(time +".jpg", imageBlob2);
+//                Imgproc.rectangle(frame, new Point(box.x, box.y), new Point(box.x + box.width, box.y + box.height), Detect_Color, 5);
 
                 findNumbers.setInput(imageBlob2);
-
 
                 java.util.List<Mat> result2 = new java.util.ArrayList<Mat>(2);
 
@@ -260,7 +297,6 @@ public class MainActivity extends Activity implements CvCameraViewListener2 {
                 outBlobNames2.add(1, "yolo_23");
 
                 findNumbers.forward(result2, outBlobNames2);
-
 
                 List<Integer> clsIds2 = new ArrayList<>();
                 List<Float> confs2 = new ArrayList<>();
@@ -301,7 +337,6 @@ public class MainActivity extends Activity implements CvCameraViewListener2 {
                 int ArrayLength2 = confs2.size();
 
 
-
                 if (ArrayLength2 >= 1) {
                     // Apply non-maximum suppression procedure.
                     float nmsThresh2 = 0.2f;
@@ -321,22 +356,16 @@ public class MainActivity extends Activity implements CvCameraViewListener2 {
                     String out = "";
                     for (int i = 0; i < ind2.length; ++i) {
 
-
-
-                        //Rect2d box2 = boxesArray[idx2];
-
                         int idGuy2 = clsIds2.get(i);
 
+                        Rect2d box2 =  boxesArray2[i];
 
 
                         List<String> cocoNames = Arrays.asList("Alpha", "8", "5", "4", ".", "9", "1", "7", "6", "3", "2", "0");
 
 
-
-
                         out = out + cocoNames.get(idGuy2) + " ";
-                        //Imgproc.putText(frame, cocoNames.get(idGuy2) + " " + intConf2 + "%", box2.tl(), 1, 2, new Scalar(255, 255, 0), 2);
-
+//                        Imgproc.putText(frame, cocoNames.get(idGuy2) , box2.tl(), 1, 2, new Scalar(255, 255, 0), 2);
 
 
                     }
@@ -344,7 +373,7 @@ public class MainActivity extends Activity implements CvCameraViewListener2 {
 
                     TextView editOut = this.findViewById(R.id.NumberOutput);
                     editOut.setText(likely);
-                    System.out.println( editOut.getText() );
+                    System.out.println(editOut.getText());
 
 
 
@@ -353,55 +382,57 @@ public class MainActivity extends Activity implements CvCameraViewListener2 {
             }
         }
 
-            return frame;
+        startYolo = false;
+
+        return frame;
 
     }
 
-    private native void adaptiveThresholdFromJNI(long mat);
 
     public void YOLO(View view) {
 
-        if (startYolo == false){
-
-
+        if (startYolo == false) {
 
 
             startYolo = true;
 
-            if (firstTimeYolo == false){
+            if (firstTimeYolo == false) {
                 firstTimeYolo = true;
-                String alt_model = Environment.getExternalStorageDirectory() + "/dnns/Odom_detect.onnx";
-                String tinyYoloCfg = Environment.getExternalStorageDirectory() + "/dnns/yolov3-tiny_obj(2).cfg" ;
-                String tinyYoloWeights = Environment.getExternalStorageDirectory() + "/dnns/yolov3-tiny_obj_best(1).weights";
+
+                Log.i(TAG, String.valueOf(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)));
+
+
+                File file = new File("/storage/self/primary/dnnbackup/custom-yolov4-tiny-detector.cfg");
+                File file2 = new File("/storage/self/primary/dnnbackup/custom-yolov4-tiny-detector_best.weights");
+
+
+                Boolean hasPermission = (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE)
+                        == PackageManager.PERMISSION_GRANTED);
+                if (!hasPermission) {
+                    Log.e(TAG, "get permision   ");
+                    ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 3);
+                } else {
+                    Log.e(TAG, "get permision-- already granted ");
+                }
+
+
+                Log.i(TAG, "file exists:" + file.exists());
+                Log.i(TAG, "file exists:" + file2.exists());
+
+
+                String tinyYoloCfg = "/storage/self/primary/dnnbackup/yolov3-tiny_obj(2).cfg";
+
+                String tinyYoloWeights = "/storage/self/primary/dnnbackup/yolov3-tiny_obj_best(1).weights";
                 findOdom = Dnn.readNetFromDarknet(tinyYoloCfg, tinyYoloWeights);
-                //findOdom = Dnn.readNetFromDarknet(tinyYoloCfg, tinyYoloWeights);
 
 
-
-                String tinyNumberscfg = Environment.getExternalStorageDirectory() + "/dnns/yolov3-tiny_numbers.cfg" ;
-                String tinyNumbersweights = Environment.getExternalStorageDirectory() + "/dnns/yolov3-tiny_numbers.weights";
+                String tinyNumberscfg = Environment.getExternalStorageDirectory() + "/dnnbackup/yolov3-tiny_numbers.cfg";
+                String tinyNumbersweights = Environment.getExternalStorageDirectory() + "/dnnbackup/yolov3-tiny_numbers.weights";
                 findNumbers = Dnn.readNetFromDarknet(tinyNumberscfg, tinyNumbersweights);
-
-
-
-                //tinyYolo = Dnn.readNetFromTensorflow(effdet);
-                //tinyYolo = Dnn.readNetFromTensorflow(effdet);
-
-
-
-
-
-
-
-
 
             }
 
-
-
-        }
-
-        else{
+        } else {
 
             startYolo = false;
 
@@ -411,23 +442,23 @@ public class MainActivity extends Activity implements CvCameraViewListener2 {
 
     }
 
-    public String Likely(String curr){
 
-        if (poss_Strings.containsKey(curr)==false ) {
+    public String Likely(String curr) {
+
+        if (poss_Strings.containsKey(curr) == false) {
             poss_Strings.put(curr, 1);
-        }
-        else {
-            poss_Strings.compute(curr, (key, oldValue) -> oldValue +1);
+        } else {
+            poss_Strings.compute(curr, (key, oldValue) -> oldValue + 1);
         }
         return poss_Strings.entrySet().stream().max((entry1, entry2) -> entry1.getValue() > entry2.getValue() ? 1 : -1).get().getKey();
     }
 
-    public void clear(){
+
+
+    public void clear(View view) {
         poss_Strings.clear();
         TextView editOut = this.findViewById(R.id.NumberOutput);
         editOut.setText("Nothing detected");
 
     }
-
-
 }

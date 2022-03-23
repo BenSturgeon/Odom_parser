@@ -1,0 +1,9 @@
+# ninja log v5
+0	725	1647793569	CMakeFiles/native-lib.dir/native-lib.cpp.o	97db7e5c92add70
+725	789	1647793569	/home/capeai/StudioProjects/Odom_parser/app/build/intermediates/cxx/Debug/11532n6g/obj/armeabi-v7a/libnative-lib.so	6bd765c6d7a03c65
+1	656	1647793776	CMakeFiles/native-lib.dir/native-lib.cpp.o	97db7e5c92add70
+656	722	1647793777	/home/capeai/StudioProjects/Odom_parser/app/build/intermediates/cxx/Debug/11532n6g/obj/armeabi-v7a/libnative-lib.so	6bd765c6d7a03c65
+0	666	1647793834	CMakeFiles/native-lib.dir/native-lib.cpp.o	97db7e5c92add70
+666	732	1647793834	/home/capeai/StudioProjects/Odom_parser/app/build/intermediates/cxx/Debug/11532n6g/obj/armeabi-v7a/libnative-lib.so	6bd765c6d7a03c65
+1	647	1647793947	CMakeFiles/native-lib.dir/native-lib.cpp.o	97db7e5c92add70
+647	716	1647793947	/home/capeai/StudioProjects/Odom_parser/app/build/intermediates/cxx/Debug/11532n6g/obj/armeabi-v7a/libnative-lib.so	6bd765c6d7a03c65

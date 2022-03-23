@@ -1,0 +1,7 @@
+Executable : /home/capeai/Android/Sdk/cmake/3.10.2.4988404/bin/ninja
+arguments : 
+-C
+/home/capeai/StudioProjects/Odom_parser/app/.cxx/Debug/11532n6g/arm64-v8a
+native-lib
+jvmArgs : 
+

@@ -9,8 +9,9 @@ using namespace std;
 using namespace cv;
 
 extern "C" {
-void JNICALL
-Java_com_example_nativeopencvandroidtemplate_MainActivity_adaptiveThresholdFromJNI(JNIEnv *env,
+__attribute__((unused)) void JNICALL
+Java_androidopencv_odometer_OCR_adaptiveThresholdFromJNI(JNIEnv *env,
+
                                                                                    jobject instance,
                                                                                    jlong matAddr) {
 

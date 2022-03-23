@@ -5,9 +5,9 @@
     "environmentVariables": []
   },
   "cmake": {
-    "cmakeArtifactsBaseFolder": "/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/.cxx/cmake/debug/x86",
-    "cmakeServerLogFile": "/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/.cxx/cmake/debug/x86/cmake_server_log.txt",
-    "cmakeWrappingBaseFolder": "/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/.cxx/cxx/debug/x86",
+    "cmakeArtifactsBaseFolder": "/home/capeai/StudioProjects/Odom_parser/app/.cxx/cmake/debug/x86",
+    "cmakeServerLogFile": "/home/capeai/StudioProjects/Odom_parser/app/.cxx/cmake/debug/x86/cmake_server_log.txt",
+    "cmakeWrappingBaseFolder": "/home/capeai/StudioProjects/Odom_parser/app/.cxx/cxx/debug/x86",
     "effectiveConfiguration": {
       "name": "traditional-android-studio-cmake-environment",
       "description": "Composite reified CMakeSettings configuration",
@@ -15,9 +15,9 @@
       "inheritEnvironments": [
         "ndk"
       ],
-      "buildRoot": "/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/.cxx/cmake/debug/x86",
-      "cmakeToolchain": "/home/benjamin/Android/Sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake",
-      "cmakeExecutable": "/home/benjamin/Android/Sdk/cmake/3.10.2.4988404/bin/cmake",
+      "buildRoot": "/home/capeai/StudioProjects/Odom_parser/app/.cxx/cmake/debug/x86",
+      "cmakeToolchain": "/home/capeai/Android/Sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake",
+      "cmakeExecutable": "/home/capeai/Android/Sdk/cmake/3.10.2.4988404/bin/cmake",
       "variables": [
         {
           "name": "CMAKE_CXX_FLAGS",
@@ -25,7 +25,7 @@
         },
         {
           "name": "CMAKE_FIND_ROOT_PATH",
-          "value": "/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/.cxx/cmake/debug/prefab/x86/prefab"
+          "value": "/home/capeai/StudioProjects/Odom_parser/app/.cxx/cmake/debug/prefab/x86/prefab"
         },
         {
           "name": "CMAKE_BUILD_TYPE",
@@ -33,7 +33,7 @@
         },
         {
           "name": "CMAKE_TOOLCHAIN_FILE",
-          "value": "/home/benjamin/Android/Sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake"
+          "value": "/home/capeai/Android/Sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake"
         },
         {
           "name": "ANDROID_ABI",
@@ -41,7 +41,7 @@
         },
         {
           "name": "ANDROID_NDK",
-          "value": "/home/benjamin/Android/Sdk/ndk/21.3.6528147"
+          "value": "/home/capeai/Android/Sdk/ndk/21.3.6528147"
         },
         {
           "name": "ANDROID_PLATFORM",
@@ -53,7 +53,7 @@
         },
         {
           "name": "CMAKE_ANDROID_NDK",
-          "value": "/home/benjamin/Android/Sdk/ndk/21.3.6528147"
+          "value": "/home/capeai/Android/Sdk/ndk/21.3.6528147"
         },
         {
           "name": "CMAKE_EXPORT_COMPILE_COMMANDS",
@@ -61,11 +61,11 @@
         },
         {
           "name": "CMAKE_LIBRARY_OUTPUT_DIRECTORY",
-          "value": "/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/build/intermediates/cmake/debug/obj/x86"
+          "value": "/home/capeai/StudioProjects/Odom_parser/app/build/intermediates/cmake/debug/obj/x86"
         },
         {
           "name": "CMAKE_MAKE_PROGRAM",
-          "value": "/home/benjamin/Android/Sdk/cmake/3.10.2.4988404/bin/ninja"
+          "value": "/home/capeai/Android/Sdk/cmake/3.10.2.4988404/bin/ninja"
         },
         {
           "name": "CMAKE_SYSTEM_NAME",
@@ -82,14 +82,14 @@
       ]
     }
   },
-  "cxxBuildFolder": "/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/.cxx/cmake/debug/x86",
+  "cxxBuildFolder": "/home/capeai/StudioProjects/Odom_parser/app/.cxx/cmake/debug/x86",
   "info": {
     "abi": "X86",
     "bitness": 32,
     "deprecated": false,
     "default": true
   },
-  "originalCxxBuildFolder": "/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/.cxx/cmake/debug/x86",
+  "originalCxxBuildFolder": "/home/capeai/StudioProjects/Odom_parser/app/.cxx/cmake/debug/x86",
   "variant": {
     "buildSystemArgumentList": [
       "-DOpenCV_DIR\u003d/home/benjamin/Coding/Opencv/Downloads/opencv_android 4.4/OpenCV-android-sdk/sdk/native"
@@ -104,24 +104,24 @@
     "module": {
       "buildSystem": "CMAKE",
       "cmake": {
-        "cmakeExe": "/home/benjamin/Android/Sdk/cmake/3.10.2.4988404/bin/cmake",
+        "cmakeExe": "/home/capeai/Android/Sdk/cmake/3.10.2.4988404/bin/cmake",
         "minimumCmakeVersion": "3.10.2",
-        "ninjaExe": "/home/benjamin/Android/Sdk/cmake/3.10.2.4988404/bin/ninja"
+        "ninjaExe": "/home/capeai/Android/Sdk/cmake/3.10.2.4988404/bin/ninja"
       },
-      "cmakeToolchainFile": "/home/benjamin/Android/Sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake",
-      "cxxFolder": "/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/.cxx",
+      "cmakeToolchainFile": "/home/capeai/Android/Sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake",
+      "cxxFolder": "/home/capeai/StudioProjects/Odom_parser/app/.cxx",
       "gradleModulePathName": ":app",
-      "intermediatesFolder": "/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/build/intermediates",
-      "makeFile": "/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/src/main/cpp/CMakeLists.txt",
-      "moduleBuildFile": "/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/build.gradle",
-      "moduleRootFolder": "/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app",
+      "intermediatesFolder": "/home/capeai/StudioProjects/Odom_parser/app/build/intermediates",
+      "makeFile": "/home/capeai/StudioProjects/Odom_parser/app/src/main/cpp/CMakeLists.txt",
+      "moduleBuildFile": "/home/capeai/StudioProjects/Odom_parser/app/build.gradle",
+      "moduleRootFolder": "/home/capeai/StudioProjects/Odom_parser/app",
       "ndkDefaultAbiList": [
         "ARMEABI_V7A",
         "ARM64_V8A",
         "X86",
         "X86_64"
       ],
-      "ndkFolder": "/home/benjamin/Android/Sdk/ndk/21.3.6528147",
+      "ndkFolder": "/home/capeai/Android/Sdk/ndk/21.3.6528147",
       "ndkMetaAbiList": [
         {
           "abi": "ARMEABI_V7A",
@@ -179,29 +179,29 @@
       "ndkDefaultStl": "LIBCXX_STATIC",
       "ndkVersion": "21.3.6528147",
       "project": {
-        "compilerSettingsCacheFolder": "/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/.cxx",
-        "cxxFolder": "/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/.cxx",
+        "compilerSettingsCacheFolder": "/home/capeai/StudioProjects/Odom_parser/.cxx",
+        "cxxFolder": "/home/capeai/StudioProjects/Odom_parser/.cxx",
         "isBuildOnlyTargetAbiEnabled": true,
         "isCmakeBuildCohabitationEnabled": false,
         "isNativeCompilerSettingsCacheEnabled": false,
-        "rootBuildGradleFolder": "/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR",
-        "sdkFolder": "/home/benjamin/Android/Sdk",
+        "rootBuildGradleFolder": "/home/capeai/StudioProjects/Odom_parser",
+        "sdkFolder": "/home/capeai/Android/Sdk",
         "isPrefabEnabled": false
       },
       "splitsAbiFilterSet": [],
       "stlSharedObjectMap": {
         "LIBCXX_SHARED": {
-          "ARMEABI_V7A": "/home/benjamin/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/libc++_shared.so",
-          "ARM64_V8A": "/home/benjamin/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/libc++_shared.so",
-          "X86": "/home/benjamin/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/i686-linux-android/libc++_shared.so",
-          "X86_64": "/home/benjamin/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/libc++_shared.so"
+          "ARMEABI_V7A": "/home/capeai/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/libc++_shared.so",
+          "ARM64_V8A": "/home/capeai/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/libc++_shared.so",
+          "X86": "/home/capeai/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/i686-linux-android/libc++_shared.so",
+          "X86_64": "/home/capeai/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/libc++_shared.so"
         },
         "LIBCXX_STATIC": {},
         "NONE": {},
         "SYSTEM": {}
       }
     },
-    "objFolder": "/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/build/intermediates/cmake/debug/obj",
+    "objFolder": "/home/capeai/StudioProjects/Odom_parser/app/build/intermediates/cmake/debug/obj",
     "variantName": "debug",
     "validAbiList": [
       "ARMEABI_V7A",
@@ -209,8 +209,8 @@
       "X86",
       "X86_64"
     ],
-    "prefabDirectory": "/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/.cxx/cmake/debug/prefab",
+    "prefabDirectory": "/home/capeai/StudioProjects/Odom_parser/app/.cxx/cmake/debug/prefab",
     "prefabPackageDirectoryList": []
   },
-  "prefabFolder": "/home/benjamin/AndroidStudioProjects/androidopencv_odometer_OCR/app/.cxx/cmake/debug/prefab/x86"
+  "prefabFolder": "/home/capeai/StudioProjects/Odom_parser/app/.cxx/cmake/debug/prefab/x86"
 }

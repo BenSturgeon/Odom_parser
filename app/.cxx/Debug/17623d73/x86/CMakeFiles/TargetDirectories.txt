@@ -1,0 +1,3 @@
+/home/capeai/StudioProjects/Odom_parser/app/.cxx/Debug/17623d73/x86/CMakeFiles/rebuild_cache.dir
+/home/capeai/StudioProjects/Odom_parser/app/.cxx/Debug/17623d73/x86/CMakeFiles/edit_cache.dir
+/home/capeai/StudioProjects/Odom_parser/app/.cxx/Debug/17623d73/x86/CMakeFiles/native-lib.dir
