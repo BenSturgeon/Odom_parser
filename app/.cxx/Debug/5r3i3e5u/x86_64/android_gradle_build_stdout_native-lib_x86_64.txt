@@ -1,2 +1,0 @@
-ninja: Entering directory `/home/capeai/StudioProjects/Odom_parser/app/.cxx/Debug/5r3i3e5u/x86_64'
-ninja: no work to do.

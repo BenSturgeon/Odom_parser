@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/capeai/StudioProjects/Odom_parser/app/.cxx/Debug/11532n6g/x86",
-  "command": "/home/capeai/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=i686-none-linux-android29 --gcc-toolchain=/home/capeai/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/capeai/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dnative_lib_EXPORTS -I/home/capeai/werk/my_projects/OpenCV-android-sdk4.5/sdk/native/jni/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/native-lib.dir/native-lib.cpp.o -c /home/capeai/StudioProjects/Odom_parser/app/src/main/cpp/native-lib.cpp",
-  "file": "/home/capeai/StudioProjects/Odom_parser/app/src/main/cpp/native-lib.cpp"
-}
-]

@@ -1,9 +1,0 @@
-# ninja log v5
-0	611	1647793571	CMakeFiles/native-lib.dir/native-lib.cpp.o	b37c45794aa3843e
-612	665	1647793571	/home/capeai/StudioProjects/Odom_parser/app/build/intermediates/cxx/Debug/11532n6g/obj/x86/libnative-lib.so	984dcee1f1c5c4da
-1	614	1647793777	CMakeFiles/native-lib.dir/native-lib.cpp.o	b37c45794aa3843e
-614	668	1647793777	/home/capeai/StudioProjects/Odom_parser/app/build/intermediates/cxx/Debug/11532n6g/obj/x86/libnative-lib.so	984dcee1f1c5c4da
-1	655	1647793834	CMakeFiles/native-lib.dir/native-lib.cpp.o	b37c45794aa3843e
-656	709	1647793834	/home/capeai/StudioProjects/Odom_parser/app/build/intermediates/cxx/Debug/11532n6g/obj/x86/libnative-lib.so	984dcee1f1c5c4da
-1	609	1647793947	CMakeFiles/native-lib.dir/native-lib.cpp.o	b37c45794aa3843e
-609	658	1647793947	/home/capeai/StudioProjects/Odom_parser/app/build/intermediates/cxx/Debug/11532n6g/obj/x86/libnative-lib.so	984dcee1f1c5c4da

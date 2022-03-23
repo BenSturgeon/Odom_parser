@@ -1,2 +1,0 @@
-ninja: Entering directory `/home/capeai/StudioProjects/Odom_parser/app/.cxx/Debug/11532n6g/armeabi-v7a'
-ninja: no work to do.
