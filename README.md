@@ -49,11 +49,13 @@ If I was to continue to improve this project these would be my next milestones:
 8.    Sync Gradle and run the application on your Android Device!
 
 ## Demonstration
-[[images/Screenshot_20220323_182014_com.example.androidopencv_odometer_OCR.MainActivity.jpg]]
+!(demonstration 1)[https://github.com/BenSturgeon/Odom_parser/blob/master/images/Screenshot_20220323_182014_com.example.androidopencv_odometer_OCR.MainActivity.jpg?raw=true]
 
-![[images/Screenshot_20220323_182144_com.example.androidopencv_odometer_OCR.MainActivity.jpg]]
 
-![[images/Screenshot_20220323_182435_com.example.androidopencv_odometer_OCR.MainActivity.jpg]]
+!(demonstration 2)[https://github.com/BenSturgeon/Odom_parser/blob/master/images/Screenshot_20220323_182144_com.example.androidopencv_odometer_OCR.MainActivity.jpg?raw=true]
+
+!(demonstration 3)[https://github.com/BenSturgeon/Odom_parser/blob/master/images/Screenshot_20220323_182435_com.example.androidopencv_odometer_OCR.MainActivity.jpg?raw=true]
+
 
 ## Questions and Remarks
 
